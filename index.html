@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- inicio link fonte -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Manrope:wght@200..800&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <!-- fim link fonte -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+
+</head>
+<body>
+    <form class="contact-us">
+        <div class="title-page">
+            <h2>Contato</h2>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="first-name">Primeiro Nome *</label>
+                <input type="text" id="first-name" name="first-name" >
+                <span class="error-message">Este campo é obrigatório</span>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Sobrenome *</label>
+                <input type="text" id="last-name" name="last-name" >
+                <span class="error-message">Este campo é obrigatório</span>
+            </div>
+        </div>
+        <div class="form-group">
+        <label for="email-address">E-mail *</label>
+        <input type="email" name="email" id="email-address" >
+        <span class="error-message">Este campo é obrigatório</span>
+        </div>
+        <div class="form-group">
+            <label>Tipo de Consulta</label>
+            <div class="radio-group" id="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="general" name="query-type" value="general">
+                    <label for="general">Consulta Geral</label>
+                    
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="support" name="query-type" value="support">
+                    <label for="support">Solicitação de Suporte</label>
+                    
+                </div>
+            </div>
+            <span class="error-message">Este campo é obrigatório</span>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensagem *</label>
+            <textarea name="message" id="message" rows="5" ></textarea>
+            <span class="error-message">Este campo é obrigatório</span>
+        </div>
+        <div class="form-checkbox">
+            <input type="checkbox" name="consent" id="consent" >
+            <label for="consent">Eu concordo em ser contatado pela equipe *</label>
+            <span class="error-message">Necessario permitir que entremos em contato</span>
+        </div>
+        <button type="submit" id="submit-btn">Enviar</button>
+    </form>
+    <script src="script.js"></script>
+    </body>
+</html>
